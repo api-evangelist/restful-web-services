@@ -1,0 +1,16 @@
+name: RESTful Web Services
+description: An architectural style for designing networked applications using HTTP
+  methods and stateless communication, emphasizing simplicity, scalability, and resource-based
+  interactions. It supports the full software development lifecycle from design through
+  deployment and maintenance.
+url: https://restfulapi.net/
+tags:
+- Web Services
+- API
+- REST
+- HTTP
+- Architecture
+created: '2025'
+modified: '2025'
+apis: []
+common: []
