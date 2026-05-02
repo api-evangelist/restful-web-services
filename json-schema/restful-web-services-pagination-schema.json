@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/restful-web-services/schemas/pagination",
+  "title": "REST Pagination Response",
+  "description": "Standard paginated collection response pattern for RESTful web services. Supports both offset-based and cursor-based pagination.",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "description": "Array of resource items for this page"
+    },
+    "meta": {
+      "type": "object",
+      "description": "Pagination metadata",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "description": "Total number of items across all pages"
+        },
+        "page": {
+          "type": "integer",
+          "description": "Current page number (1-based)"
+        },
+        "perPage": {
+          "type": "integer",
+          "description": "Number of items per page"
+        },
+        "totalPages": {
+          "type": "integer",
+          "description": "Total number of pages"
+        },
+        "offset": {
+          "type": "integer",
+          "description": "Current offset (for offset-based pagination)"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Current limit (for offset-based pagination)"
+        },
+        "cursor": {
+          "type": "string",
+          "description": "Cursor for the next page (for cursor-based pagination)"
+        },
+        "hasMore": {
+          "type": "boolean",
+          "description": "Whether more pages are available"
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "description": "Navigation links for pagination",
+      "properties": {
+        "self": { "type": "string", "format": "uri" },
+        "first": { "type": "string", "format": "uri" },
+        "prev": { "type": ["string", "null"], "format": "uri" },
+        "next": { "type": ["string", "null"], "format": "uri" },
+        "last": { "type": "string", "format": "uri" }
+      }
+    }
+  },
+  "required": ["data"]
+}

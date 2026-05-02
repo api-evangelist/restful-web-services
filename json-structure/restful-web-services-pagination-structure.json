@@ -1,0 +1,15 @@
+{
+  "name": "Paginated Collection Response",
+  "description": "Standard paginated response wrapper for RESTful web service collection endpoints, supporting offset-based and cursor-based pagination.",
+  "fields": [
+    { "name": "data", "type": "array", "description": "Array of resource items for this page", "required": true },
+    { "name": "meta.total", "type": "integer", "description": "Total items across all pages", "required": false },
+    { "name": "meta.page", "type": "integer", "description": "Current page number (1-based)", "required": false },
+    { "name": "meta.perPage", "type": "integer", "description": "Number of items per page", "required": false },
+    { "name": "meta.cursor", "type": "string", "description": "Cursor for next page (cursor-based pagination)", "required": false },
+    { "name": "meta.hasMore", "type": "boolean", "description": "Whether additional pages exist", "required": false },
+    { "name": "links.self", "type": "string", "description": "Link to current page", "required": false },
+    { "name": "links.next", "type": "string", "description": "Link to next page, null if last page", "required": false },
+    { "name": "links.prev", "type": "string", "description": "Link to previous page, null if first page", "required": false }
+  ]
+}

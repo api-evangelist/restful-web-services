@@ -1,0 +1,165 @@
+name: RESTful Web Services Vocabulary
+description: >-
+  Vocabulary for RESTful web services covering HTTP methods, status codes,
+  content types, authentication patterns, caching, versioning, and common
+  design patterns.
+tags:
+  - Architecture
+  - HTTP
+  - REST
+  - Vocabulary
+  - Web Services
+created: '2026-05-02'
+modified: '2026-05-02'
+terms:
+  - term: GET
+    definition: >-
+      HTTP method for retrieving a resource representation. GET requests are
+      safe (no side effects) and idempotent (same result every time). Responses
+      may be cached. GET requests must not have a request body.
+    tags:
+      - HTTP Methods
+
+  - term: POST
+    definition: >-
+      HTTP method for creating a new resource or submitting data for processing.
+      POST is neither safe nor idempotent. Typically returns 201 Created with
+      a Location header pointing to the new resource.
+    tags:
+      - HTTP Methods
+
+  - term: PUT
+    definition: >-
+      HTTP method for replacing a resource with the provided representation.
+      PUT is idempotent but not safe. If the resource does not exist, PUT may
+      create it (204 No Content or 201 Created).
+    tags:
+      - HTTP Methods
+
+  - term: PATCH
+    definition: >-
+      HTTP method for partially modifying a resource. Unlike PUT, PATCH
+      only sends the fields that should be changed. PATCH is not inherently
+      idempotent but should be designed to be so.
+    tags:
+      - HTTP Methods
+
+  - term: DELETE
+    definition: >-
+      HTTP method for removing a resource. DELETE is idempotent: deleting an
+      already-deleted resource returns 204 No Content (or 404 Not Found).
+    tags:
+      - HTTP Methods
+
+  - term: HEAD
+    definition: >-
+      HTTP method identical to GET but returns only headers, no body. Used
+      to check resource existence, retrieve metadata, and validate caches.
+    tags:
+      - HTTP Methods
+
+  - term: OPTIONS
+    definition: >-
+      HTTP method that returns the supported HTTP methods for a resource.
+      Used in CORS preflight requests to check whether cross-origin requests
+      are allowed.
+    tags:
+      - HTTP Methods
+      - CORS
+
+  - term: CRUD
+    definition: >-
+      Create, Read, Update, Delete. The four fundamental data operations
+      mapped to HTTP methods: POST (create), GET (read), PUT/PATCH (update),
+      DELETE (delete).
+    tags:
+      - Design Patterns
+
+  - term: Content-Type
+    definition: >-
+      HTTP header indicating the media type of the request or response body.
+      Common values: application/json, application/xml, text/plain,
+      multipart/form-data, application/x-www-form-urlencoded.
+    tags:
+      - Headers
+
+  - term: Accept
+    definition: >-
+      HTTP request header indicating which media types the client can process.
+      Enables content negotiation, allowing clients to request JSON, XML, etc.
+    tags:
+      - Headers
+
+  - term: Authorization
+    definition: >-
+      HTTP request header containing credentials to authenticate the request.
+      Common schemes: Bearer {token} (OAuth2/JWT), Basic {base64} (HTTP Basic),
+      ApiKey {key}.
+    tags:
+      - Authentication
+      - Headers
+
+  - term: ETag
+    definition: >-
+      HTTP response header containing a version identifier for the resource.
+      Used for cache validation and optimistic concurrency. Clients send
+      If-None-Match (GET) or If-Match (PUT/DELETE) with the ETag value.
+    tags:
+      - Caching
+      - Concurrency
+
+  - term: Cache-Control
+    definition: >-
+      HTTP header for controlling caching behavior. Key directives: no-cache
+      (revalidate before using cache), no-store (never cache), max-age=N
+      (cache for N seconds), public/private.
+    tags:
+      - Caching
+      - Headers
+
+  - term: Rate Limiting
+    definition: >-
+      Mechanism limiting the number of API requests a client can make in a
+      time window. Communicated via headers: X-RateLimit-Limit,
+      X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After. Returns 429
+      Too Many Requests when exceeded.
+    tags:
+      - API Design
+
+  - term: CORS
+    definition: >-
+      Cross-Origin Resource Sharing. Browser security mechanism that controls
+      which origins can make requests to a web API. Configured via
+      Access-Control-Allow-Origin, Access-Control-Allow-Methods, and related
+      response headers.
+    tags:
+      - Security
+
+  - term: OpenAPI Specification
+    definition: >-
+      A language-agnostic interface definition language (IDL) for HTTP APIs.
+      Describes endpoints, operations, parameters, request/response schemas,
+      authentication, and metadata. Enables documentation generation, code
+      generation, and validation tooling.
+    tags:
+      - Specification
+      - Standards
+
+  - term: JSON:API
+    definition: >-
+      A specification for building APIs in JSON. Defines conventions for
+      resource representation, relationships, sparse fieldsets, pagination,
+      filtering, and sorting. Reduces the number of requests and the amount
+      of data transmitted.
+    tags:
+      - Hypermedia
+      - Standards
+
+  - term: HAL
+    definition: >-
+      Hypertext Application Language. A simple JSON or XML format for
+      including hypermedia links in API responses. Uses _links for links and
+      _embedded for embedded resources.
+    tags:
+      - Hypermedia
+      - Standards

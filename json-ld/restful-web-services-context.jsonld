@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rws": "https://api-evangelist.github.io/restful-web-services/vocab/",
+
+    "WebService": "schema:WebAPI",
+    "Collection": "hydra:Collection",
+    "PaginatedCollection": "rws:PaginatedCollection",
+    "Software": "schema:SoftwareApplication",
+    "Framework": "schema:SoftwareApplication",
+
+    "id": "@id",
+    "type": "@type",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "documentation": {
+      "@id": "schema:documentation",
+      "@type": "@id"
+    },
+    "version": "schema:version",
+    "programmingLanguage": "schema:programmingLanguage",
+    "license": "schema:license",
+    "softwareRequirements": "schema:softwareRequirements",
+
+    "data": {
+      "@id": "hydra:member",
+      "@container": "@list"
+    },
+    "totalItems": {
+      "@id": "hydra:totalItems",
+      "@type": "xsd:integer"
+    },
+    "totalPages": {
+      "@id": "rws:totalPages",
+      "@type": "xsd:integer"
+    },
+    "page": {
+      "@id": "rws:page",
+      "@type": "xsd:integer"
+    },
+    "perPage": {
+      "@id": "hydra:limit",
+      "@type": "xsd:integer"
+    },
+    "hasMore": {
+      "@id": "rws:hasMore",
+      "@type": "xsd:boolean"
+    },
+    "links": {
+      "@id": "rws:links",
+      "@type": "@id"
+    },
+    "next": {
+      "@id": "hydra:next",
+      "@type": "@id"
+    },
+    "prev": {
+      "@id": "hydra:previous",
+      "@type": "@id"
+    },
+    "first": {
+      "@id": "hydra:first",
+      "@type": "@id"
+    },
+    "last": {
+      "@id": "hydra:last",
+      "@type": "@id"
+    },
+    "self": {
+      "@id": "schema:url",
+      "@type": "@id"
+    }
+  }
+}
