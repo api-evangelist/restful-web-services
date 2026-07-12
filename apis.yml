@@ -108,6 +108,12 @@ apis:
         url: https://expressjs.com/
 
 common:
+  - type: TrustCenter
+    url: security/restful-web-services-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/restful-web-services-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/restful-web-services-domain-security.yml
   - type: Roy Fielding Dissertation
     url: https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
   - type: OpenAPI Specification
