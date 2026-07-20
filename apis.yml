@@ -1,5 +1,6 @@
 aid: restful-web-services
 name: RESTful Web Services
+kind: topic
 description: >-
   RESTful web services are web services built using the Representational State
   Transfer (REST) architectural style, using HTTP as the transport protocol
