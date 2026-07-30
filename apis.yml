@@ -1,4 +1,17 @@
 aid: restful-web-services
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/restful-web-services.png
 name: RESTful Web Services
 kind: topic
 description: >-
@@ -16,7 +29,7 @@ tags:
   - REST
   - Web Services
 created: '2025-01-01'
-modified: '2026-05-02'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 apis:
   - aid: restful-web-services:postman
