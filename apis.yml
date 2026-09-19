@@ -88,6 +88,10 @@ apis:
       rich ecosystem of integrations.
     humanURL: https://spring.io/guides/gs/rest-service/
     tags:
+      - Framework
+      - Java
+      - Microservices
+    tags_raw:
       - Frameworks
       - Java
       - Microservices
@@ -105,6 +109,10 @@ apis:
       and supports async operations natively.
     humanURL: https://fastapi.tiangolo.com/
     tags:
+      - Framework
+      - OpenAPI
+      - Python
+    tags_raw:
       - Frameworks
       - OpenAPI
       - Python
@@ -123,6 +131,10 @@ apis:
       building RESTful APIs and web services in JavaScript and TypeScript.
     humanURL: https://expressjs.com/
     tags:
+      - Framework
+      - JavaScript
+      - Node.js
+    tags_raw:
       - Frameworks
       - JavaScript
       - Node.js
