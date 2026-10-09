@@ -7,14 +7,18 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: www.postman.com
   final_host: www.postman.com
-  ownership: own
-  owner: restful-web-services
-  shares_host_with: null
+  ownership: shared
+  owner: postman
+  shares_host_with:
+  - postman
   inherited_from: null
+  alias_of: null
   verdict: scored
-  score: 18
+  score: null
+  band: null
+  band_label: null
   host_score: 18
-  density: 36.44
+  density: null
   words: 494
   tiers:
     agentic: 7
