@@ -1,4 +1,4 @@
-# RESTful Web Services
+# restful-web-services
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,53 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-RESTful web services are web services built using the Representational State Transfer (REST) architectural style, using HTTP as the transport protocol with standard methods (GET, POST, PUT, PATCH, DELETE) to perform CRUD operations on resources. This index covers frameworks, tooling, testing tools, and best practice guidelines for building and consuming RESTful web services.
+## restful-web-services on APIs.io
 
-## References
+Everything profiled for restful-web-services is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/restful-web-services/](https://apis.io/providers/restful-web-services/)** — or go straight to one of the APIs or properties below.
 
-| Type | URL |
-|------|-----|
-| Roy Fielding Dissertation | https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm |
-| OpenAPI Specification | https://spec.openapis.org/oas/latest.html |
-| RFC 7231 HTTP Semantics | https://datatracker.ietf.org/doc/html/rfc7231 |
-| RFC 7807 Problem Details | https://datatracker.ietf.org/doc/html/rfc7807 |
+## API Evangelist rating
 
-## Notable Frameworks and Tools
+Not yet rated. See [apis.io/providers/restful-web-services/](https://apis.io/providers/restful-web-services/).
 
-| Name | Description | URL |
-|------|-------------|-----|
-| Postman | API development and testing platform | https://www.postman.com/ |
-| Swagger / OpenAPI | API design, documentation, and code generation | https://swagger.io/ |
-| Spring Boot | Java framework for RESTful services | https://spring.io/ |
-| FastAPI | High-performance Python REST framework | https://fastapi.tiangolo.com/ |
-| Express.js | Node.js web framework for REST APIs | https://expressjs.com/ |
+## How this profile is made
 
-## Artifacts
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-### JSON Schemas
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for restful-web-services: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| File | Description |
-|------|-------------|
-| [json-schema/restful-web-services-pagination-schema.json](json-schema/restful-web-services-pagination-schema.json) | Standard paginated collection response schema |
+## Open an issue
 
-### JSON Structures
-
-| File | Description |
-|------|-------------|
-| [json-structure/restful-web-services-pagination-structure.json](json-structure/restful-web-services-pagination-structure.json) | Paginated collection response field reference |
-
-### JSON-LD Context
-
-| File | Description |
-|------|-------------|
-| [json-ld/restful-web-services-context.jsonld](json-ld/restful-web-services-context.jsonld) | JSON-LD context for RESTful web services patterns |
-
-### Vocabulary
-
-| File | Description |
-|------|-------------|
-| [vocabulary/restful-web-services-vocabulary.yml](vocabulary/restful-web-services-vocabulary.yml) | HTTP methods, status codes, headers, and REST design patterns |
-
-## Maintainers
-
-- **Kin Lane** — kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/restful-web-services/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
